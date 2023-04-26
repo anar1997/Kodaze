@@ -1,0 +1,45 @@
+.promo-blocks {
+  display: grid;
+  margin-top: 5rem /* 80px */;
+  width: 80%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem /* 16px */;
+  margin-bottom: 3rem /* 48px */;
+  margin-left: auto;
+  margin-right: auto;
+  .promo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem /* 96px */;
+    .promo-div-1 {
+      height: 6rem /* 96px */;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f6f6f6;
+      width: 18rem /* 288px */;
+      p {
+        display: flex;
+        align-items: center;
+        .icon {
+          color: #263045;
+          font-size: 1.875rem /* 30px */;
+          line-height: 2.25rem /* 36px */;
+          margin-right: 0.5rem /* 8px */;
+        }
+        span {
+          color: #263045;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo-blocks{
+    width: 60%;
+  }
+}
+

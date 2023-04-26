@@ -1,0 +1,33 @@
+.main-agile {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  margin-left: 110px;
+  margin-bottom: 20px;
+  .main-agile-p1 {
+    font-size: 18px;
+    color: white;
+  }
+  .main-agile-p2 {
+    font-size: 50px;
+    color: white;
+  }
+  .main-agile-link {
+    width: 200px;
+    background-color: #263045;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem /* 32px */;
+    padding-right: 2rem /* 32px */;
+    padding-top: 0.75rem /* 12px */;
+    padding-bottom: 0.75rem /* 12px */;
+    margin-top: 20px;
+    .arrow-right {
+      margin-left: 0.5rem /* 8px */;
+    }
+  }
+}
+
+

@@ -1,0 +1,41 @@
+.links-area-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .wrap{     
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem/* 64px */;
+        .kodaze-img{
+            width: 10rem/* 160px */;
+            // object-fit: cover;
+            height: 40px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li{
+                margin-left: 20px !important;
+                a{
+                    font-size: 20px;
+                    line-height: 24px;
+                    display: block;
+                    font-weight: 500;
+                    color: #263045;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .links-area-wrap{
+        .wrap{
+            width: 60%;
+        }
+    }
+  }
+  

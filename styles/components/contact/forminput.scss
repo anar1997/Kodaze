@@ -1,0 +1,166 @@
+.form-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem /* 80px */;
+  align-items: center;
+  .form-divs {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem /* 32px */;
+      width: 100%;
+      height: auto;
+      .input-div {
+        width: 100%;
+        display: grid;
+        gap: 3rem /* 48px */;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        .input-label {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+          color: #243045;
+          font-weight: 550;
+          .input {
+            margin-top: 0.25rem /* 4px */;
+            height: 4rem /* 64px */;
+            background-color: #f8f8f8;
+            width: 100%;
+            text-indent: 1.5rem /* 24px */;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            border-radius: 3px;
+            border: none;
+            font-size: 0.875rem /* 14px */;
+            line-height: 1.25rem /* 20px */;
+            grid-column: span 1 / span 1;
+          }
+          .input::placeholder {
+            color: #243045;
+          }
+          .input:focus {
+            color: #243045;
+          }
+        }
+      }
+      .input-label {
+        font-weight: 550;
+
+        .input-textarea {
+          margin-top: 0.25rem /* 4px */;
+          background-color: #f8f8f8;
+          padding-top: 1rem /* 16px */;
+          width: 100%;
+          position: relative;
+          text-indent: 1.5rem /* 24px */;
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+          border: none;
+          border-radius: 3px;
+          font-size: 0.875rem /* 14px */;
+          line-height: 1.25rem /* 20px */;
+          grid-column: span 1 / span 1;
+        }
+        .input-textarea::placeholder {
+          color: #243045;
+          top: 1rem /* 16px */;
+        }
+        .input-textarea:focus {
+          color: #243045;
+        }
+      }
+      .send-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .send-button {
+          color: white;
+          background-color: #243045;
+          padding-left: 2rem /* 32px */;
+          padding-right: 2rem /* 32px */;
+          padding-top: 0.75rem /* 12px */;
+          padding-bottom: 0.75rem /* 12px */;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          .send-span {
+            margin-top: 2px;
+            margin-left: 0.25rem /* 4px */;
+          }
+        }
+      }
+    }
+    .cards {
+      width: 100%;
+      gap: 3rem /* 48px */;
+      margin-top: 4rem /* 64px */;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      .card {
+        grid-column: span 1 / span 1;
+        border-radius: 3px;
+        padding-top: 0.75rem /* 12px */;
+        padding-bottom: 0.75rem /* 12px */;
+        height: 13rem /* 208px */;
+        background-color: #f8f8f8;
+        .div-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #243045;
+            font-size: 70px;
+            line-height: 2.25rem /* 36px */;
+            border-radius: 9999px;
+            background-color: white;
+          }
+        }
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span {
+            font-size: 22px;
+            line-height: 1.75rem /* 28px */;
+            margin-top: 0.5rem /* 8px */;
+            margin-bottom: 0.5rem /* 8px */;
+            color: #243045;
+          }
+          p {
+            color: #5f636b;
+            font-size: 16px;
+            line-height: 1.25rem /* 20px */;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .location{
+      width: 100%;
+      height: 24rem/* 384px */;
+      border-radius: 3px;
+      margin-top: 4rem/* 64px */;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .form-inputs{
+    .form-divs{
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.main-promo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem /* 16px */;
+  .promo-div {
+    display: flex;
+    justify-content: center;
+    grid-column: span 1 / span 1;
+    align-items: center;
+    height: auto;
+    .promo-div-1{
+        height: 7rem/* 112px */;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f6f6f6;
+        width: 18rem/* 288px */;
+        p {
+          display: flex;
+          align-items: center;
+          .icon {
+            font-size: 1.875rem /* 30px */;
+            line-height: 2.25rem /* 36px */;
+            margin-right: 0.5rem /* 8px */;
+            color: #263045;
+          }
+          span{
+            color: #263045;
+          }
+        }
+    }
+  }
+}
+
